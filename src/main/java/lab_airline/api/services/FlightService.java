@@ -10,4 +10,11 @@ public class FlightService {
     FlightRepository flightRepository;
 
 
+    public Flight addNewFlight(Flight flight){                   // Add details of new Flight
+        flightRepository.save(flight);
+        return flight;
+    }
+
+//     
+
 }
