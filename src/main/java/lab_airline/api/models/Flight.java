@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Flight {
 
+
 private long id;
 
 private String destination;
@@ -15,7 +16,6 @@ private Date departureDate;
 private Date departureTime;
 
 public Flight(long id, String destination, Date departureDate, Date departureTime){
-    this.id = id;
     this.destination = destination;
     this.capacity = capacity;
     this.departureDate = departureDate;
