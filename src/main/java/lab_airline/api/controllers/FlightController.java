@@ -1,6 +1,7 @@
-package com.bnta.controllers;
+package lab_airline.api.controllers;
 
-import com.bnta.models.FlightDTO;
+
+//import com.bnta.models.FlightDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;

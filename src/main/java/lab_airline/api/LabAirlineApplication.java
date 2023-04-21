@@ -1,4 +1,4 @@
-package com.bnta;
+package lab_airline.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,34 +1,27 @@
 package lab_airline.api.models;
 
+import lab_airline.api.models.Flight;
 
-import jakarta.persistence.*;
-
+import java.util.Date;
 import java.util.List;
 
-@Entity (name = "Passengers")
+public class PassengerDTO {
 
-public class Passenger {
+    public long id;
 
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
-    private long id;
-
-
-    @Column
     private String name;
 
-
-    @Column
     private  String emailAddress;
 
-    public List<Flight> Flights;
+    private List<Flight> flights;
 
-    public Passenger(String name,String emailAddress){
-        this.name = name;
-        this.emailAddress = emailAddress;
+    public PassengerDTO(String name, String emailAddress, List flights){
+    this.name = name;
+    this.emailAddress = emailAddress;
+    this.flights = flights;
     }
+
+//    Getters & setters
 
     public long getId() {
         return id;
@@ -53,4 +46,16 @@ public class Passenger {
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
     }
+
+    public List<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(List<Flight> flights) {
+        this.flights = flights;
+    }
+
+
+    //
 }
+

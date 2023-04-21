@@ -1,19 +1,45 @@
-package com.bnta.models;
+package lab_airline.api.models;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
+
+
+@Entity
+@Table (name = "Flights")
 
 public class Flight {
+    @Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 
 
+@Column
 private long id;
 
+
+@Column
 private String destination;
 
+
+@Column
 private int capacity;
 
+
+@Column
 private Date departureDate;
 
+
+@Column
 private Date departureTime;
+
+
+
+@JsonIgnoreProperties ("flights")
+@ManyToMany (mappedBy = "flights")
+
+private List<Passenger> passengers;
 
 public Flight(long id, String destination, Date departureDate, Date departureTime){
     this.destination = destination;
