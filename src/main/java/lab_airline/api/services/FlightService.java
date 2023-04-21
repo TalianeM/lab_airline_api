@@ -28,7 +28,9 @@ public class FlightService {
 //    cancel Flight
 
     public Flight cancelFlight (Flight flight){
-        
+        flightRepository.deleteById();
+        return
     }
+
 
 }

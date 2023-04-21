@@ -16,6 +16,19 @@ public class PassengerService {
     @Autowired
     FlightRepository flightRepository;
 
+//    add new Passenger
+
+    public Passenger addPassenger (Passenger passenger){
+
+        passengerRepository.save
+                return passenger;
+    }
+
+//    display details of all passengers
 
 
+//    display details of specific passenger
+
+
+//    Book a passenger on to a flight
 }
