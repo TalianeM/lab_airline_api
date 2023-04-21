@@ -17,12 +17,12 @@ public class PassengerService {
     FlightRepository flightRepository;
 
 //    add new Passenger
-
-    public Passenger addPassenger (Passenger passenger){
-
-        passengerRepository.save
-                return passenger;
-    }
+//
+//    public Passenger addPassenger (Passenger passenger){
+//
+//        passengerRepository.save
+//                return passenger;
+//    }
 
 //    display details of all passengers
 
